@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+package erda.core.hepa.api;
+option go_package = "github.com/erda-project/erda-proto-go/core/hepa/api/pb";
+import "google/api/annotations.proto";
+import "google/protobuf/struct.proto";
