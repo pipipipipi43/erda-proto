@@ -11,7 +11,7 @@ service ApiService {
   // +publish path:"/api/gateway/api"
   rpc GetApis(GetApisRequest) returns (GetApisResponse) {
     option (google.api.http) = {
-      get: "/api/gateway/api?from={from}&method={method}&diceApp={diceApp}&diceService={diceService}&runtimeId={runtimeId}&apiPath={apiPath}&registerType={registerType}&netType={netType}&sortField={sortField}&sortType={sortType}&orgId={orgId}&projectId={projectId}&env={env}",
+      get: "/api/gateway/api?from={from}&method={method}&diceApp={diceApp}&diceService={diceService}&runtimeId={runtimeId}&apiPath={apiPath}&registerType={registerType}&netType={netType}&sortField={sortField}&sortType={sortType}&orgId={orgId}&projectId={projectId}&env={env}&page={page}&size={size}&needAuth={needAuth}",
     };
   }
   
