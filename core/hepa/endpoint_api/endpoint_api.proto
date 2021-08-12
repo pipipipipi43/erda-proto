@@ -55,7 +55,7 @@ service EndpointApiService {
   // +publish path: "/api/gateway/openapi/packages/{packageId}/apis"
   rpc GetEndpointApis(GetEndpointApisRequest) returns (GetEndpointApisResponse) {
     option (google.api.http) = {
-      get: "/api/gateway/openapi/packages/{packageId}/apis",
+      get: "/api/gateway/openapi/packages/{packageId}/apis?apiPath={apiPath}&method={method}&origin={origin}&diceApp={diceApp}&diceService={diceService}&sortField={sortField}&sortType={sortType}&pageNo={pageNo}&pageSize={pageSize}",
     };
   }
 
@@ -151,6 +151,15 @@ message CreateEndpointApiRequest {
 
 message GetEndpointApisRequest {
   string packageId = 1;
+  string apiPath = 2;
+  string method = 3;
+  string origin = 4;
+  string diceApp = 5;
+  string diceService = 6;
+  string sortField = 7;
+  string sortType = 8;
+  int64 pageNo = 9;
+  int64 pageSize = 10;
 }
 
 message GetEndpointApisResponse {
