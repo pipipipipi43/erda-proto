@@ -129,19 +129,20 @@ message EndpointApi {
   string redirectType = 2;
   string redirectAddr = 3;
   string redirectPath = 4;
-  string redirectService = 5;
-  string redirectRuntimeId = 6;
-  string redirectRuntimeName = 7;
-  google.protobuf.Value method = 8;
-  bool allowPassAuth = 9;
-  string description = 10;
-  repeated string hosts = 11;
-  string apiId = 12;
-  string createAt = 13;
-  string diceApp = 14;
-  string diceService = 15;
-  string origin = 16;
-  bool mutable = 17;
+  string redirectApp = 5;  
+  string redirectService = 6;
+  string redirectRuntimeId = 7;
+  string redirectRuntimeName = 8;
+  google.protobuf.Value method = 9;
+  bool allowPassAuth = 10;
+  string description = 11;
+  repeated string hosts = 12;
+  string apiId = 13;
+  string createAt = 14;
+  string diceApp = 15;
+  string diceService = 16;
+  string origin = 17;
+  bool mutable = 18;
 }
 
 message CreateEndpointApiRequest {
